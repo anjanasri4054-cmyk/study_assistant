@@ -26,7 +26,7 @@ def study_assistant(user_prompt, persona):
   )
   return response.text
 
-  demo= gr.Interface(
+demo= gr.Interface(
     fn = study_assistant,
     inputs=[
         gr.Textbox(lines=4, placeholder="Ask a question...", label="Question"),
